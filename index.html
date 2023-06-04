@@ -2,27 +2,31 @@
 <html lang="en-US">
   <head>
     <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
     <title>My test page</title>
     <link rel="stylesheet" href="styles.css">
   </head>
   <body>
-      <div class="top-container">
-        <img id="avatar" src="Images/avatarcircle.png">
-        <h1>Tomskibobs</h1>
+          
+    <div class="top-container"> 
+        
+      <div class="flexcontainer">
+          <div class="logo"><a href="/"><img id="avatar" src="Images/avatarcircle.png"></a></div>
+          <div class="logo">Tomskibobs.github.io</div>
+        </div>
+
+        <div class="flexcontainer">
+          <div class="pagelinks" id="currentpage">Home</div>
+          <div class="pagelinks">PenTesting</div>
+          <div class="pagelinks">Programming</div>
+        </div>
+ 
       </div>
-      
-      <div class="header" id="myHeader">
-        <table id="pages">
-          <tr>
-            <td id="currentpage">Home</td>
-            <td>Python</td>
-            <td>TryHackMe</td>
-          </tr>
-        </table>
-      </div>
-      
       <div class="content">
-        <p>This site is currently under construction.</p>
+        <h1>EternalBlue Exploit (MS17-010)</h1>
+        <p class="date">Added on 4th June 2023</p>
+        <p>This write up will demonstrate the M17-010 exploit for Windows 7, more commonly known as "Eternal Blue".</p>
+        <h2>Port Scan</h2>
       </div>
 
       <div class="footer">
