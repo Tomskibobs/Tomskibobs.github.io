@@ -47,7 +47,6 @@ body {
   text-decoration-style: solid;
   text-decoration-thickness: 0.2rem;
   text-underline-offset: 8px;
-  
 }
 
 .header .spacer {
@@ -84,7 +83,7 @@ body {
   background-color: #465461;
   color: white;
   text-align: center;
-  padding: 10px 16px;
+  padding: 0.5rem;
 }
 
 .content {
@@ -113,11 +112,37 @@ h1{
   color: #bce5dd;
 }
 
-
+a {
+  color: #FFFFFF;
+  text-decoration: none;
+}
 
 .social{
   width: 1.5rem;
-  padding: 0 0.5rem;  
+  padding: 0.3rem; 
+}
+
+.contents-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap:wrap;
+  justify-content: center;
+}
+
+.image-container {
+  
+  text-align: center;
+  padding: 2rem;
+}
+
+.image img{
+  width: 15rem;
+  border: solid 0.2rem #bce5dd;
+  
+}
+
+.caption{
+  text-align:center;
 }
 
 @media only screen and (max-width: 768px) {
@@ -128,4 +153,19 @@ h1{
   .logo{
     font-size: 1.5rem;
   }
+
+  .image img{
+    width: 12rem;
+    border: solid 0.2rem #bce5dd;
+    
+  }
+
+  .contents-container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap:wrap;
+    justify-content: center;
+  }
 }
+
+
