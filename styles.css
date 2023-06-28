@@ -1,12 +1,14 @@
 body {
   margin: 0;
-  font-family: Arial, Helvetica, sans-serif;
-  background-color: #35414b;
+  font-family: Arial, sans-serif;
+  background-color: white;
 }
 
 .top-container {
-  background-color: #465461;
+  background-color: #262626;
   text-align: center;
+  position: sticky;
+  top: 0;
 }
 
 .flexcontainer{
@@ -15,6 +17,7 @@ body {
   flex-wrap:wrap;
   align-items: center;
   justify-content: center;
+  background-color: #262626;
 }
 
 .pagelinks{
@@ -26,7 +29,7 @@ body {
 
 .header {
   padding: 10px 16px;
-  background: #465461;
+  background: #262626;
   color: white;
   width: auto;
   table-layout: fixed;
@@ -43,7 +46,7 @@ body {
 #currentpage {
   font-weight: bold;
   text-decoration: underline;
-  text-decoration-color: #8eded3;
+  text-decoration-color: #D9B944;
   text-decoration-style: solid;
   text-decoration-thickness: 0.2rem;
   text-underline-offset: 8px;
@@ -56,8 +59,9 @@ body {
 .logo {
   color: white;
   font-weight: bold; 
-  font-size: 2rem;
+  width: 25rem;
   padding: 0.8rem;
+  
 }
 
 
@@ -80,7 +84,7 @@ body {
   left: 0;
   bottom: 0;
   width: 100%;
-  background-color: #465461;
+  background-color: #262626;
   color: white;
   text-align: center;
   padding: 0.5rem;
@@ -88,8 +92,7 @@ body {
 
 .content {
   padding: 5%;
-  background-color: #35414b;
-  color: white;
+  color: black;
 }
 
 .date {
@@ -109,7 +112,6 @@ body {
 }
 
 h1{
-  color: #bce5dd;
 }
 
 a {
@@ -122,28 +124,53 @@ a {
   padding: 0.3rem; 
 }
 
-.contents-container {
-  display: flex;
-  flex-direction: row;
-  flex-wrap:wrap;
+
+
+.feature-items {
+  display: flex; /* changed */
+  flex-flow: wrap;
+  width: 100%;
   justify-content: center;
 }
 
-.image-container {
+.feature-item--wrapper {
+  background-color: rgb(236, 236, 236);
+  border-radius: 1rem;
+  display: flex; /* added */
+  flex-direction: row;
+  box-sizing: border-box;
+  width: 35rem;
+  margin: 1rem;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 1rem;
   
-  text-align: center;
+}
+
+.feature-title {
+  font-weight: bold;
+}
+
+.feature-subtitle {
+  font-weight: bold;
+  font-style: italic;
+}
+
+.img-wrapper {
+  padding: 1rem;
+}
+
+.img-wrapper,
+img {
+  width: 10rem;
+}
+
+.text {
+  box-sizing: border-box;
   padding: 2rem;
-}
-
-.image img{
-  width: 15rem;
-  border: solid 0.2rem #bce5dd;
-  
-}
-
-.caption{
-  text-align:center;
-}
+  flex: 1 1 auto;
+}  
 
 @media only screen and (max-width: 768px) {
   #avatar{
