@@ -91,8 +91,13 @@ body {
 }
 
 .content {
-  padding: 5%;
+  padding: 5rem;
   color: black;
+  background-color: rgb(236, 236, 236);
+  margin-left: 5%;
+  margin-right: 5%; 
+  margin-top: 1rem;
+  border-radius: 1rem;
 }
 
 .date {
@@ -114,7 +119,7 @@ body {
 h1{
 }
 
-a {
+.whitelink {
   color: #FFFFFF;
   text-decoration: none;
 }
@@ -185,6 +190,7 @@ img {
   text-align: center;
 }
 
+
 @media only screen and (max-width: 768px) {
   #avatar{
     width: 4rem;
@@ -208,12 +214,19 @@ img {
   }
 
 
-
   .feature-item--wrapper {
     text-align: center;
     flex-direction: column;
+  }
 
-}
 
+  .content{
+    padding: 2em;
+    margin: 1rem;
+  } 
+
+  .logo{
+    width: 20rem;
+  }
 
 }
